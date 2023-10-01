@@ -1,4 +1,4 @@
-# IBM Data Science Capstone - GitHub Repository
+# IBM Data Science Capstone
 
 ## Overview
 This GitHub repository serves as the comprehensive collection and showcase of the Capstone project for the IBM Data Science Professional Certificate. The Capstone project represents the culmination of the extensive data science curriculum offered by IBM, demonstrating the practical application of acquired knowledge and skills in real-world scenarios.
