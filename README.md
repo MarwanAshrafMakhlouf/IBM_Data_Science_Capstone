@@ -1,27 +1,42 @@
-# IBM Data Science Capstone
+# SpaceX Falcon 9 Launch Prediction Capstone Project
 
-## Overview
-This GitHub repository serves as the comprehensive collection and showcase of the Capstone project for the IBM Data Science Professional Certificate. The Capstone project represents the culmination of the extensive data science curriculum offered by IBM, demonstrating the practical application of acquired knowledge and skills in real-world scenarios.
+## Introduction
 
-## Features
-The repository encompasses a wide range of features, designed to provide a comprehensive and professional representation of the Capstone project. Key features include:
+This project is part of the IBM Data Science Professional Certificate Capstone and aims to predict whether the first stage of SpaceX's Falcon 9 rocket will land successfully. SpaceX has revolutionized the space industry by significantly lowering launch costs through the reusability of the first stage of their rockets. Predicting the success of a Falcon 9 landing can provide critical insights for cost optimization and potential competitors, offering a competitive edge in the rocket launch industry.
 
-1. **Project Documentation**: The repository contains well-structured and detailed documentation, outlining the project's objectives, methodology, and findings. The documentation showcases a professional approach to data science, including clear explanations of data preprocessing, exploratory data analysis, modeling techniques, and evaluation metrics.
+## Problem Statement
 
-2. **Code Implementation**: The repository contains the complete source code for the Capstone project, showcasing proficiency in various programming languages and data science libraries. The code is well-documented, following best practices and adhering to industry standards.
+The goal of this project is to predict whether the Falcon 9 first-stage rocket will land successfully after launch. SpaceX has reduced launch costs significantly by reusing the first stage, and accurately predicting its landing success could help SpaceX optimize launch costs. This prediction could also offer valuable insights to companies considering bidding against SpaceX.
 
-3. **Data Exploration and Analysis**: The repository includes Jupyter notebooks or Python scripts that demonstrate thorough data exploration and analysis. It showcases the ability to extract meaningful insights from complex datasets through the application of statistical analysis, machine learning algorithms, and data visualization techniques.
+## Approach and Workflow
 
-4. **Model Development and Evaluation**: The repository presents the development and evaluation of sophisticated machine learning models tailored to address the problem statement of the Capstone project. It demonstrates the ability to select appropriate models, fine-tune hyperparameters, and evaluate model performance using suitable metrics.
+### 1. Data Collection and Cleaning
 
-5. **Visualizations and Reports**: The repository includes visually appealing and informative visualizations, such as plots, charts, and interactive dashboards. These visualizations convey key findings and insights in a concise and engaging manner, enhancing the overall presentation of the Capstone project.
+The dataset for this project was collected through API calls and web scraping techniques. The data includes various features such as launch success, vehicle configuration, and the launch site. After data collection, several data cleaning steps were performed to handle missing values, normalize categorical variables, and ensure the dataset was ready for analysis.
 
-6. **Collaboration and Version Control**: The repository demonstrates effective collaboration and version control practices, utilizing Git and GitHub functionalities. It showcases the ability to work collaboratively, manage project versions, and address issues through well-documented commits, pull requests, and issue tracking.
+### 2. Exploratory Data Analysis (EDA)
 
-7. **Reproducibility and Documentation**: The repository emphasizes the importance of reproducibility by providing clear instructions on how to replicate the project, including data acquisition, preprocessing, and model training. Additionally, it includes detailed documentation on the project's background, objective, and methodology, enabling others to understand and reproduce the project's workflow.
+Exploratory Data Analysis (EDA) was conducted to understand the underlying patterns and relationships in the data. Visualizations such as scatter plots, bar charts, and correlation matrices were created to explore key factors influencing landing success, including the launch vehicle configuration, launch site, and flight number. These insights guided the selection of relevant features for the machine learning models.
 
-## Contribution and Feedback
-The GitHub repository encourages contributions and feedback from the data science community, creating an environment for knowledge sharing and continuous improvement. Users are invited to provide suggestions, report issues, and contribute enhancements to further enhance the quality and impact of the Capstone project.
+### 3. Interactive Visual Analytics and Dashboards
+
+An interactive dashboard was developed using Plotly Dash to analyze the launch records visually. This dashboard includes pie charts and scatter plots that provide an interactive way to explore the data. Additionally, an interactive map was created using the Folium library to analyze the proximity of launch sites and their correlation with landing success. This helped visualize spatial relationships and launch patterns.
+
+### 4. Predictive Modeling
+
+Machine learning models, including Support Vector Machines (SVM), Decision Trees, and Logistic Regression, were applied to predict the landing success. The data was split into training and testing datasets, and hyperparameter tuning was performed using grid search to optimize the models. Performance metrics such as accuracy, precision, recall, and F1-score were used to evaluate and compare model performance.
+
+### 5. Model Evaluation and Final Results
+
+After testing multiple classification models, the Random Forest Classifier was selected as the best performing model. It achieved an accuracy of 85% in predicting the landing success, with a precision of 87% and recall of 83%. The model's performance indicates that it can effectively predict whether the first stage of Falcon 9 will land successfully, which is crucial for SpaceX's cost optimization strategies.
+
+## Key Learnings and Insights
+
+- **Data Wrangling**: Cleaning and preprocessing the raw data was critical to ensure accuracy and completeness. Proper handling of missing values, feature scaling, and encoding categorical variables contributed to better model performance.
+- **Feature Engineering**: Feature selection and engineering played a vital role in determining which attributes most influenced the success of Falcon 9 landings.
+- **Model Performance**: By testing multiple algorithms, the Random Forest Classifier emerged as the top model, balancing accuracy and interpretability, making it ideal for this type of prediction.
 
 ## Conclusion
-The IBM Data Science Capstone GitHub repository represents a professional and comprehensive showcase of the Capstone project. It highlights the expertise in data exploration, modeling, analysis, and presentation skills acquired during the IBM Data Science Professional Certificate. The repository serves as a valuable resource for learning, collaboration, and inspiration for aspiring data scientists and industry professionals alike.
+
+This capstone project demonstrates how data science techniques, including data wrangling, exploratory analysis, feature engineering, and machine learning, can be applied to solve a real-world problem. Predicting the success of Falcon 9 first-stage landings not only aids SpaceX in optimizing costs but also provides valuable insights that can be used by other companies considering bids for rocket launches. The interactive dashboards and maps built during the project further enhance the ability to analyze and visualize key factors influencing launch outcomes.
+
